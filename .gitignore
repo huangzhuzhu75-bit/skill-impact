@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.ctx-eval/
+*.log
+.DS_Store
+*.tsbuildinfo
+
+outputs/
+.env
+.env.*
+!.env.example
+.codex/
+.claude/
+*.pem
+*.key

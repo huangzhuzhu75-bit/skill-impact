@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "skill_name": "compatibility-fixture",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-10-21T13:27:30Z",
+    "evals_run": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 12.1,
+        "tokens": 1201,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 12.2,
+        "tokens": 1202,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 13.1,
+        "tokens": 1251,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 13.2,
+        "tokens": 1252,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 14.1,
+        "tokens": 1301,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 14.2,
+        "tokens": 1302,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 15.1,
+        "tokens": 1351,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 15.2,
+        "tokens": 1352,
+        "tool_calls": 3,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 16.1,
+        "tokens": 1501,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "time_seconds": 16.2,
+        "tokens": 1502,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 17.1,
+        "tokens": 1551,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 17.2,
+        "tokens": 1552,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 18.1,
+        "tokens": 1601,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1,
+        "passed": 2,
+        "failed": 0,
+        "total": 2,
+        "time_seconds": 18.2,
+        "tokens": 1602,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": true,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0,
+        "passed": 0,
+        "failed": 2,
+        "total": 2,
+        "time_seconds": 19.1,
+        "tokens": 1651,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0,
+        "passed": 0,
+        "failed": 2,
+        "total": 2,
+        "time_seconds": 19.2,
+        "tokens": 1652,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Synthetic compatibility assertion",
+          "passed": false,
+          "evidence": "Hand-authored fixture; not executed by a model"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.75,
+        "stddev": 0.2673,
+        "min": 0.5,
+        "max": 1
+      },
+      "time_seconds": {
+        "mean": 13.65,
+        "stddev": 1.1964,
+        "min": 12.1,
+        "max": 15.2
+      },
+      "tokens": {
+        "mean": 1276.5,
+        "stddev": 59.7638,
+        "min": 1201,
+        "max": 1352
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.625,
+        "stddev": 0.4432,
+        "min": 0,
+        "max": 1
+      },
+      "time_seconds": {
+        "mean": 17.65,
+        "stddev": 1.1964,
+        "min": 16.1,
+        "max": 19.2
+      },
+      "tokens": {
+        "mean": 1576.5,
+        "stddev": 59.7638,
+        "min": 1501,
+        "max": 1652
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.12",
+      "time_seconds": "-4.0",
+      "tokens": "-300"
+    }
+  },
+  "notes": []
+}

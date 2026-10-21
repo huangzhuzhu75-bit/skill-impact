@@ -1,0 +1,6 @@
+{
+  "id": "create-hello",
+  "title": "Example task: create hello.txt",
+  "checks": ["checks/check.sh"],
+  "tags": ["example"]
+}

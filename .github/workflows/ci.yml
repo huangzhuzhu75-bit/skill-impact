@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [22.22.0, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Show versions
+        run: |
+          node --version
+          git --version
+      - name: Run tests
+        run: node --test "tests/**/*.test.ts"
+      - name: 'Smoke: CLI help'
+        run: node src/cli.ts --help
+      - name: Build offline evidence report
+        run: node skills/skill-impact/scripts/report.mjs --input examples/impact/synthetic-benchmark.json --out outputs/ci-impact --data-kind synthetic --note "CI compatibility fixture, not model performance evidence"
+      - name: Check demonstration regression policy
+        run: node skills/skill-impact/scripts/gate.mjs --evidence outputs/ci-impact/evidence.json --allow-synthetic --markdown outputs/ci-impact/pr-summary.md --json outputs/ci-impact/gate.json
+      - name: Publish job summary
+        shell: pwsh
+        run: Get-Content -Raw -LiteralPath outputs/ci-impact/pr-summary.md | Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY

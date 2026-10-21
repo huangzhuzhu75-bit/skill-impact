@@ -1,0 +1,15 @@
+{
+  "name": "skill-impact",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "description": "Local-first evidence reports and regression checks for agent and Skill benchmarks.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {"node": ">=22.18.0"},
+  "bin": {"skill-impact": "bin/skill-impact.mjs", "ctx-eval": "src/cli.ts"},
+  "scripts": {"test": "node --test \"tests/**/*.test.ts\"", "demo": "node bin/skill-impact.mjs demo --out outputs/demo", "doctor": "node bin/skill-impact.mjs doctor"},
+  "repository": {"type": "git", "url": "https://github.com/huangzhuzhu75-bit/skill-impact.git"},
+  "bugs": {"url": "https://github.com/huangzhuzhu75-bit/skill-impact/issues"},
+  "homepage": "https://github.com/huangzhuzhu75-bit/skill-impact#readme",
+  "keywords": ["agent-skills", "evaluation", "benchmark", "regression", "codex", "research", "local-first"]
+}

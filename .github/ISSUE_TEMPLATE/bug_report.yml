@@ -1,0 +1,28 @@
+name: Reproducible bug
+description: Report a metric, importer, report or runner problem with a redacted reproduction.
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version and project commit.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and actual result
+      description: Include exit code. Remove credentials and private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal input and provenance
+      description: State source format/version and whether the example is synthetic. Do not attach private prompts, code or secrets.
